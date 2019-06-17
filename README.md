@@ -17,7 +17,17 @@ Visit https://blog.patricktriest.com/game-of-thrones-leaflet-webpack/ for part I
 - `data_augmentation/` - A collection of scripts to augment the shapefile data with summary data scraped from various wikis.
 - `geojson_preview` - A simple html page to preview geojson data on a map.
 
-#### Setup
+#### Docker-Compose Setup:
+
+You can build and run the entire project with one single command:
+```
+make run
+```
+
+Press `Control+C` to quit from `docker-compose`
+
+
+#### Original Setup by author:
 
 To setup the project, simply download or clone the project to your local machine and `npm install`.
 
@@ -37,16 +47,6 @@ CORS_ORIGIN=http://localhost:8080
 You'll need to change the username in the DATABASE_URL entry to match your PostgreSQL user credentials. Unless your name is "Patrick", that is, in which case it might already be fine.
 
 Run `npm run dev` to start the API server on `localhost:5000`, and to build/watch/serve the frontend code from `localhost:8080`.
-
-
-#### Docker-compose Setup:
-
-You can build and run the entire project with one single command:
-```
-make run
-```
-
-Press `Control+C` to quit from `docker-compose`
 
 ___
 
