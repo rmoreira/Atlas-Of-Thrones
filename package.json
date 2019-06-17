@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "serve": "webpack --watch & http-server ./public",
+    "serve": "webpack --watch & http-server ./public -p 8080",
     "dev": "NODE_ENV=local npm start & npm run serve",
     "build": "NODE_ENV=production webpack",
     "deploy-frontend": "npm run build && bash deploy.sh"

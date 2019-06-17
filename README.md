@@ -38,6 +38,16 @@ You'll need to change the username in the DATABASE_URL entry to match your Postg
 
 Run `npm run dev` to start the API server on `localhost:5000`, and to build/watch/serve the frontend code from `localhost:8080`.
 
+
+#### Docker-compose Setup:
+
+You can build and run the entire project with one single command:
+```
+make run
+```
+
+Press `Control+C` to quit from `docker-compose`
+
 ___
 
 
